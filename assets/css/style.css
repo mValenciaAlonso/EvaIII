@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    background-color: peru;
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+}
+.container {
+    height: 50%;
+    width: 50%;
+
+}
+body {
+    background-image: url('../img/fondo.jpg');
+}
+form {
+    background-color: rgba(173, 255, 47, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    border-color: black;
+    border-style: dotted;
+
+}

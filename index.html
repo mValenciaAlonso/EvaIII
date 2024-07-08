@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">    <title>Ejercicio JS</title>
+</head>
+<body class="container">
+<h1 class="my-4">Estimación de Calorías Quemadas</h1>
+<form id="formularioCalorias">
+    <div class="mb-3">
+        <label for="peso" class="form-label">Peso (kg)</label>
+        <input type="number" class="form-control" id="peso" placeholder="Ingrese su peso">
+        <div class="alert alert-danger mt-2 d-none" id="alertaPeso">El peso debe estar entre 1 y 120 kg.</div>
+    </div>
+    <div class="mb-3">
+        <label for="tiempo" class="form-label">Tiempo de ejercicio (minutos)</label>
+        <input type="number" class="form-control " id="tiempo" placeholder="Ingrese los minutos de ejercicio">
+        <div class="alert alert-danger mt-2 d-none" id="alertaTiempo">El tiempo debe estar entre 5 y 150 minutos.</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Actividad</label>
+        <div>
+            <input type="radio" name="actividad" id="caminar" value="3.5" checked>
+            <label for="caminar">Caminar</label>
+        </div>
+        <div>
+            <input type="radio" name="actividad" id="correr" value="8.0">
+            <label for="correr">Correr</label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Calcular Calorías</button>
+    <div class="alert alert-info mt-2 d-none" id="alertaResultado"></div>
+</form>
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
